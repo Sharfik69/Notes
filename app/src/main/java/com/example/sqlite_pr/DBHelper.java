@@ -15,6 +15,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
+        //TODO: НЕЛЬЗЯ СКЛАДЫВАТЬ СТРОКИ, ДЛЯ ЭТОГО ПРИДУМАЛИ СТРИНГБИЛДЕР
         String SQL_CREATE_GUESTS_TABLE="CREATE TABLE storage ("
                 + "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + COLUMN_NAME + " VARCHAR(255) NOT NULL, "
@@ -22,7 +23,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.execSQL(SQL_CREATE_GUESTS_TABLE);
     }
-
+   
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
 
