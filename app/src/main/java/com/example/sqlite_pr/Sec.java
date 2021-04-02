@@ -1,5 +1,6 @@
 package com.example.sqlite_pr;
 
+//TODO: Разве по стандарту начинать имя переменной с нижнего подчеркивания
 public class Sec {
     private String _Name;
     private String _Data;
