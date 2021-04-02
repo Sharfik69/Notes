@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
                 Notes.add(new Sec(currentName, currentData));
             }
             cursor.close();
-
+            
+            //TODO: Тут можно не использовать преобразование к стрингу
             TotalTask.setText("Кол-во заметок: " + String.valueOf(Notes.size()));
         }
     }
