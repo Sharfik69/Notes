@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             AddTask.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    //TODO: Сделать операторские скобки
                     if (Task.getText().toString().isEmpty() || Data.getText().toString().isEmpty())
                         return;
                     ContentValues contentValues = new ContentValues();
