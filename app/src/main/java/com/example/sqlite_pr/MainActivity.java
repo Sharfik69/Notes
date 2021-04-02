@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-
+            
+            //TODO: Пробелы во всем файле ненормальные
             TotalTask =findViewById(R.id.TotalCount);
             AddTask=findViewById(R.id.addButton);
             Tasks=findViewById(R.id.Tasks);
